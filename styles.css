@@ -1,4 +1,5 @@
 body {
+  font-size: 2.5rem;
   margin: 0;
   padding: 0;
   background: rgb(7, 54, 13);
@@ -6,6 +7,9 @@ body {
 }
 
 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100px;
   background-color: rgb(10, 10, 10);
@@ -20,6 +24,9 @@ body {
 }
 
 .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100px;
     background-color: rgb(31, 28, 221);
@@ -29,6 +36,9 @@ body {
 }
 
 .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 300px;
     background-color: rgb(194, 160, 9);
@@ -38,6 +48,9 @@ body {
 }
 
 .box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48%;
     height: 600px;
     background-color: rgb(181, 223, 84);
@@ -47,6 +60,9 @@ body {
 }
 
 .box5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48%;
     height: 400px;
     background-color: rgb(223, 84, 161);
