@@ -14,7 +14,7 @@ body {
 
 .weather-row {
   display: flex;
-  justify-content: center
+  justify-content: center;
   align-items: center;
   padding: 10px;
 }
@@ -23,7 +23,7 @@ body {
     width: 50%;
     height: 100px;
     background-color: rgb(31, 28, 221);
-    margin-top: 20px;
+    margin-top: -180px;
     border-radius: 10px;
     margin-right: 20px;
 }
