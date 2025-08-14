@@ -48,6 +48,10 @@ async function loadNWSForecast() {
       // Precipitation chance: pick max from day + night
       const precip = Math.max(...dayPeriods.map(p => p.probabilityOfPrecipitation?.value || 0));
 
+      //Day icon
+      const dayPeriod = dayPeriods.find(p => p.name.toLowerCase().includes('day')) || dayPeriods[0];
+      const iconUrl = dayPeriod.icon;
+
       // Day name
       const d = new Date(date);
       const dayName = d.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'America/Kentucky/Louisville' });
@@ -57,6 +61,7 @@ async function loadNWSForecast() {
       card.className = 'forecast-card';
       card.innerHTML = `
         <div class="day">${dayName}</div>
+        <img src="${iconUrl}" alt="${dayPeriod.shortForecast}" class="forecase-icon">
         <div class="temp">High: ${Math.round(highTemp)}° / Low: ${Math.round(lowTemp)}°</div>
         <div class="precip">Precip: ${precip}%</div>
       `;
