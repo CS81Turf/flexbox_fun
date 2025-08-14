@@ -56,8 +56,13 @@ body {
   height: 100px;
   margin-left: 20px;
 }
-
-/* .header is not used for the logo/date/time box. If you use a header elsewhere, style it as needed. */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(187, 193, 206);
+}
 
 
 .weather-row {
@@ -77,6 +82,42 @@ body {
     margin-top: -180px;
     border-radius: 10px;
     margin-right: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.forecast-card {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.forecast-card .day {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.forecast-card .temp {
+  font-size: 1.4rem;
+  margin: 4px 0;
+}
+
+.forecast-card .description {
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 .box3 {

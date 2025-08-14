@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Box Test</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +20,11 @@
     </div>
   </div>
   <div class="weather-row">
-    <div class="box2">Weather</div>
+    <div class="box2">
+      <div class="forecast-container" id="forecast">
+
+      </div>
+    </div>
     <div class="box3">Goals</div>
   </div>
   <div class="notes-row">
@@ -30,18 +34,6 @@
   <div class="ticker">
     <div class="box6">BREAKING NEWS.....</div>
   </div>
-  <script>
-    function updateDateTime() {
-      const now = new Date();
-      const date = (now.getMonth()+1).toString().padStart(2, '0') + '/' +
-                   now.getDate().toString().padStart(2, '0') + '/' +
-                   now.getFullYear();
-      const time = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
-      document.getElementById('date').textContent = date;
-      document.getElementById('time').textContent = time;
-    }
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-  </script>
+  <script src='app.js'></script>
 </body>
 </html>
