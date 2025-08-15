@@ -64,7 +64,6 @@ body {
   background-color: rgb(187, 193, 206);
 }
 
-
 .weather-row {
   display: flex;
   justify-content: center;
@@ -73,16 +72,16 @@ body {
 }
 
 .box2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100px;
-    background-color: rgb(31, 28, 221);
-    border-radius: 10px;
-    margin-right: 20px;
-    min-height: 240px;
-    margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+  background-color: rgb(31, 28, 221);
+  border-radius: 10px;
+  margin-right: 20px;
+  min-height: 240px;
+  margin-top: -90px;
 }
 
 .forecast-container {
@@ -122,45 +121,79 @@ body {
 }
 
 .box3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 300px;
-    background-color: rgb(194, 160, 9);
-    margin-top: 20px;
-    border-radius: 10px;
-    margin-left: 20px;
+  border: 2px white solid;
+  width: 50%;
+  height: 300px;
+  background-color: #83c1d4;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.box3 h2 {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  color: #141414; /* dark yellow/brown heading */
+  font-size: 2rem;
+}
+
+.progress-bar {f
+  margin-bottom: 15px; /* space between bars */
+}
+
+.progress-bar .label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.bar {
+  width: 100%;
+  height: 25px;
+  background-color: #ff0202;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.bar .fill {
+  height: 100%;
+  background-color: #02fa0f; /* green fill, can vary by company later */
+  border-radius: 12px 0 0 12px;
+  transition: width 0.5s ease-in-out;
 }
 
 .box4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-    height: 410px;
-    background-color: rgb(181, 223, 84);
-    border-radius: 10px;
-    margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 410px;
+  background-color: rgb(181, 223, 84);
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-top: -60px;
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
 }
 
 .box5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-    height: 400px;
-    background-color: rgb(223, 84, 161);
-    margin-top: -400px;
-    border-radius: 10px;
-    margin-left: 978px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  height: 400px;
+  background-color: rgb(223, 84, 161);
+  margin-top: -400px;
+  border-radius: 10px;
+  margin-left: 978px;
 }
 
 .ticker {

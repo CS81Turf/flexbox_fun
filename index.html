@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Test</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="box">
-    <div class="box-left">
-      <span id="date"></span>
-    </div>
-    <div class="box-center">
-      <img src="images/gogreenlogo.jpg" alt="Go Green Lawn Solutions Logo" class="ggLogo" style="height:80px; margin-right:20px;">
-      <img src="images/m911logo.png" alt="Mosquito 911 Logo" class="m911Logo" style="height:80px;">
-    </div>
-    <div class="box-right">
-      <span id="time"></span>
-    </div>
-  </div>
-  <div class="weather-row">
-    <div class="box2">
-      <div class="forecast-container" id="forecast">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-left">
+        <span id="date"></span>
+      </div>
+      <div class="box-center">
+        <img
+          src="images/gogreenlogo.jpg"
+          alt="Go Green Lawn Solutions Logo"
+          class="ggLogo"
+          style="height: 80px; margin-right: 20px"
+        />
+        <img
+          src="images/m911logo.png"
+          alt="Mosquito 911 Logo"
+          class="m911Logo"
+          style="height: 80px"
+        />
+      </div>
+      <div class="box-right">
+        <span id="time"></span>
       </div>
     </div>
-    <div class="box3">Goals</div>
-  </div>
-  <div class="notes-row">
-    <div class="box4">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRIz7pHTkq_0WMsHocoTxLarfCaMitZfxlHUH31MPCNLhikkYLkNBnhmI9X9gypggpDnsyxrQhxGGoM/pubhtml?widget=true&amp;headers=false"></iframe>
+    <div class="weather-row">
+      <div class="box2">
+        <div class="forecast-container" id="forecast"></div>
+      </div>
+      <div class="box3">
+        <h2>Goals</h2>
+
+        <div class="progress-bar">
+          <span class="label">Go Green - Current Round</span>
+          <div class="bar">
+            <div class="fill" style="width: 65%"></div>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <span class="label">Go Green - Year</span>
+          <div class="bar">
+            <div class="fill" style="width: 40%"></div>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <span class="label">Mosquito911 - Current Round</span>
+          <div class="bar">
+            <div class="fill" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <span class="label">Mosquito911 - Year</span>
+          <div class="bar">
+            <div class="fill" style="width: 30%"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="box5">Tasks</div>
-  </div>
-  <div class="ticker">
-    <div class="box6">BREAKING NEWS.....</div>
-  </div>
-  <script src='app.js'></script>
-</body>
+    <div class="notes-row">
+      <div class="box4">
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRIz7pHTkq_0WMsHocoTxLarfCaMitZfxlHUH31MPCNLhikkYLkNBnhmI9X9gypggpDnsyxrQhxGGoM/pubhtml?widget=true&amp;headers=false"
+        ></iframe>
+      </div>
+      <div class="box5">Tasks</div>
+    </div>
+    <div class="ticker">
+      <div class="box6">BREAKING NEWS.....</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
